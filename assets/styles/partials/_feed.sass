@@ -1,0 +1,81 @@
+// feed
+.feed
+  @apply border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-gray-700
+  .send_tweet_content //inicio send tweet content
+    @apply flex
+    @apply w-full
+    @apply pr-3 pl-3
+    @apply border-b-[0.5px] border-gray-700 
+    .profile_pic_tweet
+      @apply mr-4 
+      img
+        
+    .send_tweet
+      @apply w-full
+      .input_content
+        @apply mt-7 
+        @apply w-full
+        textarea
+          @apply bg-black
+          @apply text-xl
+          @apply outline-0 
+          @apply w-full
+      .interactions
+        @apply flex justify-between items-center
+        @apply pb-4
+        .icons
+          @apply flex 
+          .icon
+            @apply mr-4
+            img
+        .button_twittear_content
+          .button_twittear
+            @apply flex items-center justify-between
+            @apply bg-indigo-600 text-white 
+            @apply font-bold
+            @apply pl-5 pr-5 pt-2 pb-2 mr-1 mb-3
+            @apply rounded-full
+            @apply opacity-50
+            &.clickable
+                @apply opacity-100
+  
+  .tweet_content //inicio tweet content
+    @apply flex
+    @apply pt-4 pl-3 pb-4 pr-2
+    @apply border-b-[0.5px] border-gray-700
+    @apply break-all
+    .profile_pic
+      img
+    .tweet_info
+      @apply w-full
+      .username_info
+        @apply flex items-center
+        .name
+          @apply pl-4
+        .user_name
+          @apply pl-2 
+          @apply text-sm
+        .hours
+            @apply text-sm
+            @apply pl-2
+        .opciones
+            @apply ml-52 
+            img 
+      .tweet_text
+        @apply pl-4
+        @apply text-base
+      .interactions
+        @apply flex justify-between
+        @apply pl-4 pt-3 pr-12 mr-20
+        img 
+
+    
+
+
+.tweet_counter
+  visibility: hidden
+  &.visible 
+    visibility: visible
+                    
+             
+               

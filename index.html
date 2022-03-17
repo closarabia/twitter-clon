@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>twitter_boiler</title>
+  </head>
+  <body>
+    <div class="twitter">
+      <div class="logo">
+        <img src="assets/images/twitter.svg" alt="" width="25px">
+      </div>
+      <div class="menu_principal">
+        <div class="title">
+          <div class="title_content">Inicio</div>
+          <div class="title_icon">
+            <img src="assets/images/brillos.svg" alt="" width="20px" height="20px">
+          </div>
+        </div> 
+      </div>
+      <div class="search">
+        <div class="icon">
+          <img src="assets/images/lupa.svg" alt="">
+        </div>
+        <input type="text" class="search_input">
+      </div>
+      <div class="menu">
+        <div class="menu_items">
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/home.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Inicio</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/explorar.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Explorar</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/notificaciones.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Notificaciones</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/mensajes.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Mensajes</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/guardados.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Guardados</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/listas.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Listas</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/perfil.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Perfil</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item">
+            <a href="#">
+              <div class="icon">
+                <img src="assets/images/opciones.svg" alt="" width="30px" height="30px">
+              </div>
+              <div class="label">
+                <div class="text">Más opciones</div>
+              </div>
+            </a>
+          </div>
+          <div class="menu_item"> <!--botón twittear-->
+            <button class="button_twittear">Twittear</button>
+          </div> <!--botón twittear-->
+          <div class="perfil"> <!--perfil info start-->
+            <div class="imagen_perfil">
+              <img src="assets/images/user_01.png" width="50px" height="50px">
+            </div>
+            <div class="perfil_content">
+              <div class="nombre_perfil">Claudia Sarabia</div>
+              <div class="nombre_usuario">@claudia_sarabia</div>
+            </div>
+            <div class="opciones_perfil">
+              <img src="assets/images/tres_puntos.svg" width="20px" height="20px">
+            </div>
+          </div> <!--perfil info end-->
+        </div>
+      </div>
+      <div class="feed"> <!--principio feed-->
+        <div class="send_tweet_content">
+          <div class="profile_pic_tweet">
+            <img src="assets/images/profile_pic.png" width="60px" height="60px">
+          </div>
+          <div class="send_tweet">
+            <div class="input_content">
+              <!--<input type="text" class="input_text_area" placeholder="¿Qué está pasando?">-->
+              <textarea name="text_area" id="" cols="" rows="" placeholder="¿Qué está pasando?"></textarea>
+            </div>
+            <div class="interactions">
+              <div class="icons">
+                <div class="icon">
+                  <img src="assets/images/imagen_2.svg" width="20px" height="20px">
+                </div>
+                <div class="icon">
+                  <img src="assets/images/gif_2.svg" width="20px" height="20px">
+                </div>
+                <div class="icon">
+                  <img src="assets/images/emoji.svg" width="20px" height="20px">
+                </div>
+                <div class="icon">
+                  <img src="assets/images/encuesta.svg" width="20px" height="20px">
+                </div>
+                <div class="icon">
+                  <img src="assets/images/ubicacion.svg" width="20px" height="20px">
+                </div>
+                <div class="icon">
+                  <img src="assets/images/programacion.svg" width="20px" height="20px">
+                </div>
+              </div>
+              <div class="tweet_counter"></div>
+              <div class="button_twittear_content">
+                <button class="button_twittear">Twittear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tweet_content_items">
+
+        </div>
+        <!-- <div class="tweet_content">
+          <div class="profile_pic"> 
+            <img src="assets/images/foto_perfil.svg" width="40px" height="40px">
+          </div>
+          <div class="tweet_info"> 
+            <div class="username_info">
+              <div class="name">Claudia Sarabia</div>
+              <div class="user_name">@claudia_sarabia</div>
+              <div class="hours">13h</div>
+              <div class="opciones">
+                <img src="assets/images/tres_puntos.svg" width="20px" height="20px">
+              </div>
+            </div>
+            <div class="tweet_text">
+              Holaaaaaaa estoy utilizando twitter :)
+            </div>
+            <div class="interactions">
+              <img src="assets/images/comentario.svg" width="20px" height="20px">
+              <img src="assets/images/rt.svg" width="20px" height="20px">
+              <img src="assets/images/me_gusta.svg" width="20px" height="20px">
+              <img src="assets/images/compartir.svg" width="20px" height="20px">
+            </div>
+          </div>
+        </div> -->
+      </div> <!--final feed-->
+      <div class="aside">
+        <div class="title">Qué está pasando</div>
+        <div class="content">
+          <div class="genre_tag">
+            <div class="genre">Entretenimiento</div>
+            <div class="tag">Anoche</div>
+          </div>
+          <div class="title_aside">Lorem ipsum dolor</div>
+          <div class="extra_info">10,3 mil Tweets</div>
+        </div>
+        <div class="aside_pic">
+          <img src="">
+        </div>
+
+      </div>
+    </div> <!--final twitter-->
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>

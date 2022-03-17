@@ -1,0 +1,106 @@
+@import "partials/_aside"
+@import "partials/_search"
+@import "partials/_feed"
+@import "partials/_aside"
+
+*
+  //border: 0.5px solid #7B61FF
+
+//body
+html, 
+  body 
+    @apply bg-black
+    @apply text-white
+
+// layout
+.twitter
+  @apply min-h-screen max-w-[1180px] w-full mx-auto
+  @apply grid grid-cols-[250px_1fr_350px] grid-rows-[auto_1fr]
+  @apply mt-1
+  .logo
+  .title
+  .search
+  .menu
+  .feed
+  .aside
+
+// logo
+.logo
+  @apply mt-2
+  img
+
+
+// title
+.title
+  @apply flex justify-between items-center
+  .title_content
+    @apply text-lg font-bold
+  .title_icon
+    img
+           
+      
+//search
+.search
+  @apply h-max 
+  @apply mt-1
+  .icon
+    img 
+  .text
+  
+//menú principal - send tweet
+.menu_principal
+  @apply border-l-[0.1px] border-r-[0.5px] border-gray-700
+  .title
+    @apply pt-2 pl-3
+    .title_content
+    .title_icon
+      @apply pr-2
+      img
+  
+      
+//botón
+.menu_item
+  .button_twittear
+    @apply flex items-center justify-between
+    @apply bg-indigo-600 text-white 
+    @apply font-bold
+    @apply py-3 px-16 mt-5 
+    @apply rounded-full
+        
+
+//menu
+.menu
+  .menu_items
+    .menu_item
+      @apply pt-2 pb-2
+      a 
+        @apply flex 
+        .icon
+          img
+            @apply pt-1
+        .label
+          @apply pt-1
+          .text
+            @apply font-medium
+            @apply text-lg
+            @apply pl-3
+  
+//perfil              
+.perfil
+  @apply flex
+  @apply pt-10
+  .imagen_perfil
+    img
+  .perfil_content
+    @apply pl-2
+    .nombre_perfil
+    .nombre_usuario
+      @apply text-sm
+  .opciones_perfil
+    @apply pt-3 pl-10
+    img
+    
+
+    
+    
+
